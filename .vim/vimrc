@@ -1,0 +1,32 @@
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
+set background=dark
+colorscheme dracula
+let g:neocomplete#enable_at_startup = 1
+set number
+
+set mouse=a
+map <ScrollWheelUp> <C-Y>
+map <ScrollWheelDown> <C-E>
+
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
+
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_check_on_open = 1
+"let g:syntastic_check_on_wq = 0
+
+set expandtab
+set tabstop=2
+set shiftwidth=2
+set completeopt-=preview
+
+cnoreabbrev W w
+
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
