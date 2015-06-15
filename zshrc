@@ -21,6 +21,6 @@ bindkey -v
 #Binds jj to escape
 bindkey -M viins ‘jj’ vi-cmd-mode
 
-antigen theme dracula
+antigen theme nawns/dracula-theme dracula
 
 antigen apply
