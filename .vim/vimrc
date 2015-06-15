@@ -28,7 +28,7 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 
-"Alias W=w and Q=q
+"Alias W=w and Q=q and others
 cnoreabbrev Q q
 cnoreabbrev W w
 cnoreabbrev WQ wq
@@ -40,3 +40,14 @@ au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
+
+"NerdTree mapping
+map <C-n> :NERDTreeToggle<CR>
+
+"Map jk to escape
+inoremap jk <ESC>
+
+"Hard mode
+autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
+nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
+
