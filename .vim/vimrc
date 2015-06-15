@@ -1,31 +1,41 @@
+"Pathogen for easy bundle plugins
 execute pathogen#infect()
+
+"Syntax highlighting
 syntax on
+
+"Automatically indent
 filetype plugin indent on
+
+"Dracula theme
 set background=dark
 colorscheme dracula
+
+"Auto completion
 let g:neocomplete#enable_at_startup = 1
+set completeopt-=preview
+
+"Display line numbers
 set number
 
+"Enable mouse and scrollwheel
 set mouse=a
 map <ScrollWheelUp> <C-Y>
 map <ScrollWheelDown> <C-E>
 
-"set statusline+=%#warningmsg#
-"set statusline+=%{SyntasticStatuslineFlag()}
-"set statusline+=%*
-
-"let g:syntastic_always_populate_loc_list = 1
-"let g:syntastic_auto_loc_list = 1
-"let g:syntastic_check_on_open = 1
-"let g:syntastic_check_on_wq = 0
-
+"Set gutter/tab width
 set expandtab
 set tabstop=2
 set shiftwidth=2
-set completeopt-=preview
 
+"Alias W=w and Q=q
+cnoreabbrev Q q
 cnoreabbrev W w
+cnoreabbrev WQ wq
+cnoreabbrev wQ wq
+cnoreabbrev Wq wq
 
+"Turn on rainbow parens by default
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
