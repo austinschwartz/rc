@@ -4,7 +4,7 @@ execute pathogen#infect()
 "Syntax highlighting
 syntax on
 
-"Automatically indent
+"Automatically indent, and turn on plugins
 filetype plugin indent on
 
 "Dracula theme
@@ -51,3 +51,17 @@ inoremap jk <ESC>
 autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
 
+"Bind backspace to flip between files
+nnoremap <BS> <C-^>
+
+"Reload vimrc if it changes
+augroup myvimrchooks
+    au!
+    autocmd bufwritepost .vimrc source ~/.vimrc
+augroup END
+
+"Remap split switch keys
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
