@@ -15,12 +15,6 @@ antigen bundle command-not-found
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-history-substring-search
 
-#Vim mode in the shell
-antigen bundle sharat87/zsh-vim-mode
-bindkey -v
-#Binds jj to escape
-bindkey -M viins ‘jj’ vi-cmd-mode
-
 antigen theme nawns/dracula-theme dracula
 
 antigen apply
