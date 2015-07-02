@@ -1,3 +1,4 @@
+source ~/.bashrc
 #Z script for directory traversal
 source z.sh
 
@@ -18,3 +19,5 @@ antigen bundle zsh-users/zsh-history-substring-search
 antigen theme nawns/dracula-theme dracula
 
 antigen apply
+export PGDATA=/usr/local/var/postgres
+export PATH=$PATH:/Users/aschwartz/Documents/8b/bin
