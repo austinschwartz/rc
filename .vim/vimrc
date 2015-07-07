@@ -66,3 +66,7 @@ nnoremap <C-H> <C-W><C-H>
 "ctrl-p
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+
+"Adds _ to word boundary list (so you can use ciw and get just one word in
+"something like some_words_here)
+set iskeyword-=_
