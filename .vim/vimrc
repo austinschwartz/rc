@@ -70,3 +70,7 @@ let g:ctrlp_cmd = 'CtrlP'
 "Adds _ to word boundary list (so you can use ciw and get just one word in
 "something like some_words_here)
 set iskeyword-=_
+
+"Show as much as possible of a wrapped line, instead of hiding it with @
+"symbols
+set display=lastline
