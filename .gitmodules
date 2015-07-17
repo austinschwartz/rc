@@ -31,3 +31,6 @@
 [submodule ".vim/bundle/vim-elixir"]
 	path = .vim/bundle/vim-elixir
 	url = https://github.com/elixir-lang/vim-elixir
+[submodule ".vim/bundle/vim-interestingwords"]
+	path = .vim/bundle/vim-interestingwords
+	url = https://github.com/vasconcelloslf/vim-interestingwords
