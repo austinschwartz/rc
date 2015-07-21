@@ -29,3 +29,6 @@ alias mhp='ps wwaxm -o pid,stat,vsize,rss,time,command | head -10'
  
 # Find CPU hogs
 alias ch='ps wwaxr -o pid,stat,%cpu,time,command | head -10'
+
+# added by travis gem
+[ -f /Users/aschwartz/.travis/travis.sh ] && source /Users/aschwartz/.travis/travis.sh
