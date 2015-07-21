@@ -3,7 +3,7 @@
 
 [user]
     name = nawns
-    email = nonis.git@protonmail.com
+    email = nonis@protonmail.com
 
 [merge]
     conflictstyle = diff3
