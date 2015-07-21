@@ -74,3 +74,6 @@ set iskeyword-=_
 "Show as much as possible of a wrapped line, instead of hiding it with @
 "symbols
 set display=lastline
+
+"use w!! to go into sudo and save the file as root
+cmap w!! w !sudo tee % >/dev/null
