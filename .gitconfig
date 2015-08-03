@@ -1,5 +1,6 @@
 [core]
   pager = less -SR
+  excludesfile = ~/.gitignore
 
 [user]
   name = nawns
