@@ -48,8 +48,8 @@ map <C-n> :NERDTreeToggle<CR>
 inoremap jk <ESC>
 
 "Hard mode
-autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
-nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
+"autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
+"nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
 
 "Bind backspace to flip between files
 nnoremap <BS> <C-^>
