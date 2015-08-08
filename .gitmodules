@@ -40,3 +40,6 @@
 [submodule ".vim/bundle/vim-cjsx"]
 	path = .vim/bundle/vim-cjsx
 	url = https://github.com/mtscout6/vim-cjsx.git
+[submodule ".vim/bundle/elm.vim"]
+	path = .vim/bundle/elm.vim
+	url = https://github.com/lambdatoast/elm.vim
