@@ -78,10 +78,6 @@ set display=lastline
 "use w!! to go into sudo and save the file as root
 cmap w!! w !sudo tee % >/dev/null
 
-"VimClojure stuff
-let g:vimclojure#HighlightBuiltins = 1
-let g:vimclojure#ParenRainbow = 1
-
 " Put plugins and dictionaries in this dir (also on Windows)
 let vimDir = '$HOME/.vim'
 let &runtimepath.=','.vimDir
