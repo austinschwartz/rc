@@ -7,6 +7,9 @@ syntax on
 "Automatically indent, and turn on plugins
 filetype plugin indent on
 
+"Correct backspacing
+set backspace=2
+
 "Dracula theme
 set background=dark
 colorscheme dracula
