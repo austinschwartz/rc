@@ -48,8 +48,8 @@ map <C-n> :NERDTreeToggle<CR>
 inoremap jk <ESC>
 
 "Hard mode
-autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
-nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
+"autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
+"nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
 
 "Bind backspace to flip between files
 nnoremap <BS> <C-^>
@@ -74,3 +74,24 @@ set iskeyword-=_
 "Show as much as possible of a wrapped line, instead of hiding it with @
 "symbols
 set display=lastline
+
+"use w!! to go into sudo and save the file as root
+cmap w!! w !sudo tee % >/dev/null
+
+"VimClojure stuff
+let g:vimclojure#HighlightBuiltins = 1
+let g:vimclojure#ParenRainbow = 1
+
+" Put plugins and dictionaries in this dir (also on Windows)
+let vimDir = '$HOME/.vim'
+let &runtimepath.=','.vimDir
+
+" Keep undo history across sessions by storing it in a file
+if has('persistent_undo')
+  let myUndoDir = expand(vimDir . '/undodir')
+  " Create dirs
+  call system('mkdir ' . vimDir)
+  call system('mkdir ' . myUndoDir)
+  let &undodir = myUndoDir
+  set undofile
+endif

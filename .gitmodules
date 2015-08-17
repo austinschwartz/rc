@@ -34,3 +34,12 @@
 [submodule ".vim/bundle/vim-interestingwords"]
 	path = .vim/bundle/vim-interestingwords
 	url = https://github.com/vasconcelloslf/vim-interestingwords
+[submodule ".vim/bundle/vim-jsx"]
+	path = .vim/bundle/vim-jsx
+	url = https://github.com/mxw/vim-jsx.git
+[submodule ".vim/bundle/vim-cjsx"]
+	path = .vim/bundle/vim-cjsx
+	url = https://github.com/mtscout6/vim-cjsx.git
+[submodule ".vim/bundle/elm.vim"]
+	path = .vim/bundle/elm.vim
+	url = https://github.com/lambdatoast/elm.vim
