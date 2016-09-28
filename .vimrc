@@ -14,12 +14,10 @@ set backspace=2
 set background=dark
 colorscheme dracula
 
-"Auto completion
-let g:neocomplete#enable_at_startup = 1
-set completeopt-=preview
-
 "Display line numbers
 set number
+
+let g:neocomplete#enable_at_startup = 0
 
 "Enable mouse and scrollwheel
 set mouse=a
@@ -30,6 +28,9 @@ map <ScrollWheelDown> <C-E>
 set expandtab
 set tabstop=2
 set shiftwidth=2
+
+"Automatically indenting
+set autoindent
 
 "Alias W=w and Q=q and others
 cnoreabbrev Q q
@@ -94,3 +95,11 @@ if has('persistent_undo')
   let &undodir = myUndoDir
   set undofile
 endif
+
+" Unbind the cursor keys in insert, normal and visual modes.
+"for prefix in ['i', 'n', 'v']
+  "for key in ['<Up>', '<Down>', '<Left>', '<Right>']
+    "exe prefix . "noremap " . key . " <Nop>"
+  "endfor
+"endfor
+
