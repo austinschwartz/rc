@@ -49,3 +49,6 @@
 [submodule ".vim/bundle/ucompleteme"]
 	path = .vim/bundle/ucompleteme
 	url = https://github.com/vim-scripts/ucompleteme
+[submodule ".vim/bundle/dracula-theme"]
+	path = .vim/bundle/dracula-theme
+	url = git@github.com:dracula/vim.git
