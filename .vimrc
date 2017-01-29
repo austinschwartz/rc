@@ -11,6 +11,7 @@ filetype plugin indent on
 set backspace=2
 
 "Dracula theme
+set t_Co=256
 set background=dark
 colorscheme dracula
 
@@ -44,9 +45,6 @@ cnoreabbrev Wq wq
 "au Syntax * RainbowParenthesesLoadRound
 "au Syntax * RainbowParenthesesLoadSquare
 "au Syntax * RainbowParenthesesLoadBraces
-
-"NerdTree mapping
-map <C-n> :NERDTreeToggle<CR>
 
 "Map jk to escape
 inoremap jk <ESC>
@@ -103,3 +101,28 @@ endif
   "endfor
 "endfor
 
+" NerdTree stuff
+map <C-n> :NERDTreeToggle<CR>
+
+function! s:CloseIfOnlyControlWinLeft()
+  if winnr("$") != 1
+    return
+  endif
+  if (exists("t:NERDTreeBufName") && bufwinnr(t:NERDTreeBufName) != -1)
+        \ || &buftype == 'quickfix'
+    q
+  endif
+endfunction
+augroup CloseIfOnlyControlWinLeft
+  au!
+  au BufEnter * call s:CloseIfOnlyControlWinLeft()
+augroup END
+
+let g:NERDTreeDirArrowExpandable = 'o'
+let g:NERDTreeDirArrowCollapsible = 'x'
+let g:NERDTreeWinPos = "right"
+let g:NERDTreeDirArrows=0
+" Start NERDTree
+autocmd VimEnter * NERDTree
+" " Go to previous (last accessed) window.
+autocmd VimEnter * wincmd p
