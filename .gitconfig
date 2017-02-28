@@ -3,8 +3,8 @@
   excludesfile = ~/.gitignore
 
 [user]
-  name = nawns
-  email = nonis@protonmail.com
+  name = nonis3
+  email = nonis@purdue.edu
 
 [merge]
   conflictstyle = diff3
