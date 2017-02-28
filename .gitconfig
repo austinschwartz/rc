@@ -39,8 +39,7 @@
   ocmmit = commit
   stauts = status
 
-[credential]
-  helper = osxkeychain
-
 [push]
   default = current
+[credential]
+	helper = cache
