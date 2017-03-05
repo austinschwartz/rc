@@ -26,3 +26,9 @@ alias mhp='ps wwaxm -o pid,stat,vsize,rss,time,command | head -10'
  
 # Find CPU hogs
 alias ch='ps wwaxr -o pid,stat,%cpu,time,command | head -10'
+
+alias tmux tmux -u
+
+export PATH=$PATH:/homes/cs352/javacc-6.0/bin/
+export PATH=$PATH:/p/xinu/bin
+

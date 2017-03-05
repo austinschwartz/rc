@@ -126,3 +126,5 @@ let g:NERDTreeDirArrows=0
 autocmd VimEnter * NERDTree
 " " Go to previous (last accessed) window.
 autocmd VimEnter * wincmd p
+
+set so=10
