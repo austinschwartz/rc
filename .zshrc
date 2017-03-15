@@ -32,3 +32,12 @@ alias tmux tmux -u
 export PATH=$PATH:/homes/cs352/javacc-6.0/bin/
 export PATH=$PATH:/p/xinu/bin
 
+function give-template() {
+  MAIN="https://raw.githubusercontent.com/nonis3/Competitive-Programming/master/UVA/Main.java"
+  OUTFILE="Main.java"
+  if [ "$#" -eq 1 ]; then
+    OUTFILE=$1
+  fi
+  curl "$MAIN" 2> /dev/null > "$OUTFILE"
+  echo "$OUTFILE made! :)"
+}

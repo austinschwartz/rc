@@ -27,3 +27,5 @@ for file in .gitconfig .gitignore .tmux.conf .vimrc .vim .zshrc; do
   fi
 done
 
+cp z.sh ~/z.sh
+
