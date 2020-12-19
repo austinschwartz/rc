@@ -2,13 +2,6 @@
 
 set -e
 
-uname=`uname`
-# I need this because I'm using GNU utils with no alias, might change this later.
-if [[ $uname == 'Darwin' ]]; then
-  alias readlink='greadlink'
-  alias ln='gln'
-fi
-
 echo 'updating submodules'
 git submodule update --init --recursive
 

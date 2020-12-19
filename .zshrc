@@ -1,8 +1,8 @@
 #Z script for directory traversal
-source z.sh
+source ~/rc/z.sh
 
 #Antigen
-source ~/Documents/rc/antigen.zsh
+source ~/rc/antigen.zsh
 
 antigen use oh-my-zsh
 
@@ -15,7 +15,7 @@ antigen bundle command-not-found
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-history-substring-search
 
-antigen theme nawns/dracula-theme dracula
+antigen theme dracula/zsh dracula
 
 antigen apply
 export PGDATA=/usr/local/var/postgres
@@ -28,9 +28,6 @@ alias mhp='ps wwaxm -o pid,stat,vsize,rss,time,command | head -10'
 alias ch='ps wwaxr -o pid,stat,%cpu,time,command | head -10'
 
 alias tmux tmux -u
-
-export PATH=$PATH:/homes/cs352/javacc-6.0/bin/
-export PATH=$PATH:/p/xinu/bin
 
 function give-template() {
   MAIN="https://raw.githubusercontent.com/nonis3/Competitive-Programming/master/UVA/Main.java"
