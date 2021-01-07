@@ -52,3 +52,6 @@
 [submodule ".vim/bundle/vimwiki"]
 	path = .vim/bundle/vimwiki
 	url = https://github.com/vimwiki/vimwiki.git
+[submodule ".vim/bundle/dracula"]
+	path = .vim/bundle/dracula
+	url = git@github.com:dracula/vim.git
