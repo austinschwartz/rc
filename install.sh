@@ -10,6 +10,7 @@ for file in .gitconfig .gitignore .tmux.conf .vimrc .vim .zshrc; do
   if  [ "$file" = '.gitconfig' ] && \
       [ "$USER" != 'schwar12' ] && \
       [ "$USER" != 'nonis' ] && \
+      [ "$USER" != 'austin' ] && \
       [ "$USER" != 'nawns' ]; then
     echo "not linking $file, it has my name in it!"
   else
